@@ -109,6 +109,13 @@ source $ZSH/oh-my-zsh.sh
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
+
+alias pj='cd "$(find ~/Documents/projects -maxdepth 1 -type d | grep -v "^$" | fzf-tmux -p --reverse --preview "echo {}")"'
+alias pjo='nvim +cd "$(find ~/Documents/projects -maxdepth 1 -type d | grep -v "^$" | fzf-tmux -p --reverse --preview "echo {}")"'
+
+alias gp='cd "$(find ~/Documents/gitpersonal -maxdepth 1 -type d | grep -v "^$" | fzf-tmux -p --reverse --preview "echo {}")"'
+alias gpo='nvim +cd "$(find ~/Documents/gitpersonal -maxdepth 1 -type d | grep -v "^$" | fzf-tmux -p --reverse --preview "echo {}")"'
+
 source /usr/share/zsh-theme-powerlevel10k/powerlevel10k.zsh-theme
 source ~/powerlevel10k/powerlevel10k.zsh-theme
 
