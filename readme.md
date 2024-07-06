@@ -48,7 +48,7 @@ https://configure.zsa.io/moonlander/layouts/YVjWy/LLpoX/0
 
 ## Tmux
 
-I use normal default prefix for tmux (CTRL + b)  but i have a layer on moonlander.
+I use default prefix for tmux (CTRL + b)  but i have a layer on moonlander.
 
 ![TmuxZSA](docs/tmux-layer.png)
 
@@ -57,7 +57,7 @@ I use normal default prefix for tmux (CTRL + b)  but i have a layer on moonlande
     <th>Key Combination</th>
     <th>ZSA Key</th>
     <th>Tmux layer name</th>
-    <th>Function</th>
+    <th>Description</th>
   </tr>
    <tr>
     <td>PREFIX + X + Y </td>
@@ -87,19 +87,19 @@ I use normal default prefix for tmux (CTRL + b)  but i have a layer on moonlande
     <td>PREFIX + % </td>
     <td> Custom </td>
     <td>v split</td>
-    <td>split vertically </td>
+    <td>Split vertically </td>
   </tr>
   <tr>
     <td>PREFIX + " </td>
     <td> Custom </td>
     <td>h split</td>
-    <td>split horizontally </td>
+    <td>Split horizontally </td>
   </tr>
    <tr>
     <td>PREFIX +  </td>
         <td>Y</td>
     <td>nameTab</td>
-    <td>name/rename a tab</td>
+    <td>Name/rename a tab</td>
   </tr>
    </tr>
    <tr>
@@ -118,51 +118,57 @@ I use normal default prefix for tmux (CTRL + b)  but i have a layer on moonlande
     <td>PREFIX + Arrow left </td>
         <td>H</td>
     <td>left tmux</td>
-    <td>move to left pane</td>
+    <td>Move to left pane</td>
   </tr>
    <tr>
     <td>PREFIX + Arrow down </td>
         <td>J</td>
     <td>down tmux</td>
-    <td>move to down pane</td>
+    <td>Move to down pane</td>
+    <tr>
+     <tr>
+    <td>PREFIX + Arrow up </td>
+        <td>K</td>
+    <td>up tmux</td>
+    <td>Move to up pane</td>
     <tr>
     <td>PREFIX + Arrow right </td>
         <td>L</td>
     <td>left tmux</td>
-    <td>move to left pane</td>
+    <td>Move to left pane</td>
   </tr>
     <tr>
     <td>PREFIX + 0 </td>
         <td>6</td>
     <td>win 0</td>
-    <td>move to tab 0</td>
+    <td>Move to tab 0</td>
   </tr>
     </tr>
     <tr>
     <td>PREFIX + 1 </td>
         <td>7</td>
     <td>win 1</td>
-    <td>move to tab 1 </td>
+    <td>Move to tab 1 </td>
   </tr>
     </tr>
     <tr>
     <td>PREFIX + 2 </td>
         <td>8</td>
     <td>win 2</td>
-    <td>move to tab 2</td>
+    <td>Move to tab 2</td>
   </tr>
    </tr>
     <tr>
     <td>PREFIX + 3 </td>
         <td>9</td>
     <td>win 3</td>
-    <td>move to tab 3</td>
+    <td>Move to tab 3</td>
   </tr>
  </tr>
     <tr>
     <td>PREFIX + 4 </td>
         <td>0</td>
     <td>win 4</td>
-    <td>move to tab 4</td>
+    <td>Move to tab 4</td>
   </tr>
 </table>
