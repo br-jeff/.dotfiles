@@ -1,13 +1,16 @@
 # install ZSH, .oh-my.zsh powerlevel
 
-cp ./zsh/home/DOT-oh-my-zsh/* ~.oh-my-zsh
-cp ./zsh/home/DOT-zsh/* ~.zsh
-cp .zsh/home/powerlevel10k/* ~/powerlevel10k/
+cp ./zsh/home/DOT-oh-my-zsh/* -r ~.oh-my-zsh
+cp ./zsh/home/DOT-zsh/* -r ~.zsh
+cp .zsh/home/powerlevel10k/* -r ~/powerlevel10k/
 
 #install alacritty
-cp ./alacritty/* ~/.config/alacritty/
+cp ./alacritty/* -r ~/.config/alacritty/
 
 sudo pacman -S fzf xdg-desktop-portal pamixer pavucontrol pipewire xdg-desktop-portal xdg-desktop-portal-wlr swappy slurp
 
 # install hyperland
-cp ./hyperland/* ~/.config/hypr/
+cp ./hyperland/* -r ~/.config/hypr/
+
+#instal waybar
+cp ./waybar/* -r ~/.config/waybar/
