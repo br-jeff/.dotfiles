@@ -135,14 +135,14 @@ I use normal default prefix for tmux (CTRL + b)  but i have a layer on moonlande
     <td>PREFIX + 0 </td>
         <td>6</td>
     <td>win 0</td>
-    <td>move to tab 0/td>
+    <td>move to tab 0</td>
   </tr>
     </tr>
     <tr>
     <td>PREFIX + 1 </td>
         <td>7</td>
     <td>win 1</td>
-    <td>move to tab 1/td>
+    <td>move to tab 1 </td>
   </tr>
     </tr>
     <tr>
