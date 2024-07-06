@@ -1,4 +1,4 @@
-# install ZSH, .oh-my.zsh powerlevel
+# install ZSH, .oh-my.zsh powerlevel install TPM
 
 cp ./zsh/home/DOT-oh-my-zsh/* -r ~.oh-my-zsh
 cp ./zsh/home/DOT-zsh/* -r ~.zsh
