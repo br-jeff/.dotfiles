@@ -10,7 +10,7 @@ cp ./alacritty/* -r ~/.config/alacritty/
 sudo pacman -S fzf xdg-desktop-portal pamixer pavucontrol pipewire xdg-desktop-portal xdg-desktop-portal-wlr swappy slurp
 
 # install hyperland
-cp ./hyperland/* -r ~/.config/hypr/
+cp ./hyperland/cfg/* -r ~/.config/hypr/
 
 #instal waybar
 cp ./waybar/* -r ~/.config/waybar/
