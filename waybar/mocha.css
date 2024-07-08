@@ -4,6 +4,7 @@
 @define-color white-light #FFFFFF;
 @define-color cyan      #94E2D5;
 @define-color blue      #0087af;
+/*@define-color blue   #0496FF; */
 @define-color blue-light  #00aefe;
 @define-color lavender  #b4befe;
 @define-color sapphire  #74c7ec;
@@ -14,6 +15,7 @@
 @define-color peach     #fab387;
 @define-color maroon    #eba0ac;
 @define-color red       #ff5555;
+@define-color red-light #FF4365;
 @define-color mauve     #cba6f7;
 @define-color pink      #f5c2e7;
 @define-color flamingo  #f2cdcd;
@@ -35,5 +37,7 @@
 
 @define-color foreground #CDD6F4;
 @define-color background-color #1E1E2E;
+/*  @define-color background-color #221F33;
+@define-color background-color #1D1B1E; */
 @define-color background-color-light #28283E;
 

@@ -59,6 +59,12 @@ window#waybar.hidden {
   color: @background-color;
 }
 
+#workspaces button.urgent:hover {
+  background-color: @red-light;
+  color: @background-color;
+}
+
+
 #memory,
 #custom-power,
 #battery,
