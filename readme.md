@@ -1,4 +1,4 @@
-<h2 align="center"> Arch Configurations  </h2>
+<h2 align="center"> Ubuntu Configurations  </h2>
 
 ## Introdution
 I use Moonlander from ZSA this is my layout,
@@ -18,7 +18,7 @@ https://configure.zsa.io/moonlander/layouts/YVjWy/LLpoX/0
   </tr>
   <tr>
     <td>System</td>
-    <td>Arch linux</td>
+    <td>Debian Ubuntu</td>
   </tr>
   <tr>
     <td>Window Manager</td>
@@ -26,7 +26,7 @@ https://configure.zsa.io/moonlander/layouts/YVjWy/LLpoX/0
   </tr>
   <tr>
     <td>Status Bar</td>
-    <td>Waybar</td>
+    <td>i3Status</td>
   </tr>
   <tr>
     <td>Shell</td>
@@ -47,9 +47,8 @@ https://configure.zsa.io/moonlander/layouts/YVjWy/LLpoX/0
 </table>
 
 
-## Hyperland
+## I3WM
 
-Hyperland configurations 
 
 <table align="center">
   <tr>
@@ -65,7 +64,7 @@ Hyperland configurations
     <td>Open Google Chrome</td>
   </tr>
   <tr>
-    <td>SUPER + SPACE</td>
+    <td>SUPER + B</td>
     <td>Open Laucher for search</td>
   </tr>
   <tr>
@@ -91,10 +90,6 @@ Hyperland configurations
    <tr>
    <td>SUPER + F</td>
     <td>Active Windown fullscreen</td>
-  </tr> 
-  <tr>
-   <td>SUPER + SCROLL</td>
-    <td>Change workspace</td>
   </tr> 
    <tr>
    <td>SUPER + Y</td>
@@ -180,9 +175,6 @@ Hyperland configurations
    <td>SUPER + SHIFT + 0 </td>
     <td>Move focus windown to workspace 0</td>
   </tr> 
-  
-  
-  
 </table>
 
 
