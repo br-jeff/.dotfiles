@@ -1,3 +1,6 @@
+[env]
+term = "xterm-256color"
+
 [[colors.indexed_colors]]
 color = "#FAB387"
 index = 16
@@ -31,8 +34,10 @@ white = "#BAC2DE"
 yellow = "#F9E2AF"
 
 [colors.hints.end]
-background = "#A6ADC8"
-foreground = "#1E1E2E"
+#background = "#A6ADC8"
+background = "#282a36"
+#foreground = "#1E1E2E"
+foreground = "#282a36"
 
 [colors.hints.start]
 background = "#F9E2AF"
@@ -74,8 +79,13 @@ text = "#1E1E2E"
 cursor = "#B4BEFE"
 text = "#1E1E2E"
 
+#[font.normal]
+#family = "MesloLGS NF"
+#size = 12
 [font]
-size = 12
+normal = { family = "Hack Nerd Font", style = "Regular" }
+bold = { family = "Hack Nerd Font", style = "Bold" }
+italic = { family = "Hack Nerd Font", style = "Italic" }
 
 [font.glyph_offset]
 x = 0
@@ -93,5 +103,7 @@ columns = 100
 lines = 24
 
 [window.padding]
-x = 20
-y = 20
+#x = 20
+x = 10
+y = 10
+#y = 20
