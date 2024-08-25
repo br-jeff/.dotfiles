@@ -1,12 +1,8 @@
 <h2 align="center"> Ubuntu Configurations  </h2>
 
-## Introdution
-I use Moonlander from ZSA this is my layout,
-I have layers for tmux, Gnome, and Vim. For this reason, I prefer creating macros instead of configurations.
 
-```
-https://configure.zsa.io/moonlander/layouts/YVjWy/LLpoX/0
-```
+
+
 
 ## Apresentation
 ![System SS](docs/system.png)
@@ -47,8 +43,24 @@ https://configure.zsa.io/moonlander/layouts/YVjWy/LLpoX/0
 </table>
 
 
-## I3WM
+## Introdution
+This environment is designed for use with GNU Stow. Each folder represents a separate module, and the files within these folders are organized based on their intended locations in the HOME directory. 
 
+```
+stow --adopt $FOLDER_MODULE
+```
+
+###### Don't install the Wayland module if you're using i3wm.
+
+## Setup
+I use Moonlander from ZSA with a custom layout featuring layers for tmux, gnome and nvim. To optimize my workflow, I prefer crafting macros rather than relyng solely on configurations.
+You can use my layout with the link below:
+
+```
+https://configure.zsa.io/moonlander/layouts/YVjWy/LLpoX/0
+```
+
+## I3WM
 
 <table align="center">
   <tr>
@@ -180,7 +192,7 @@ https://configure.zsa.io/moonlander/layouts/YVjWy/LLpoX/0
 
 ## Tmux
 
-I use default prefix for tmux (CTRL + b)  but i have a layer on moonlander.
+I use default prefix for tmux (CTRL + b)  but i have a layer on Moonlander.
 
 ![TmuxZSA](docs/tmux-layer.png)
 
