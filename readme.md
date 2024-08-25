@@ -18,7 +18,7 @@
   </tr>
   <tr>
     <td>Window Manager</td>
-    <td>Hyperland</td>
+    <td>I3WM</td>
   </tr>
   <tr>
     <td>Status Bar</td>
