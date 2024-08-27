@@ -123,12 +123,23 @@ alias pjo='nvim +cd "$(find ~/Documents/projects -maxdepth 1 -type d | grep -v "
 alias gp='cd "$(find ~/Documents/gitpersonal -maxdepth 1 -type d | grep -v "^$" | fzf-tmux -p --reverse --preview "echo {}")"'
 alias gpo='nvim +cd "$(find ~/Documents/gitpersonal -maxdepth 1 -type d | grep -v "^$" | fzf-tmux -p --reverse --preview "echo {}")"'
 
+# alias zellij='/snap/bin/zellij'
 #source /usr/share/zsh-theme-powerlevel10k/powerlevel10k.zsh-theme
 source ~/powerlevel10k/powerlevel10k.zsh-theme
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 
+# history
+
+HISTSIZE=9000
+HISTFILE=~/.zsh_history
+SAVEHIST=$HISTSIZE
+HISTDUB=erase
+setopt appendhistory
+setopt sharehistory
+setopt hist_save_no_dups
+setopt hist_ignore_dups
 
 ZSH_HIGHLIGHT_HIGHLIGHTERS=(main cursor)
 typeset -gA ZSH_HIGHLIGHT_STYLES
