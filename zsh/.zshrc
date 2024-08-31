@@ -27,6 +27,10 @@ alias gpo='nvim +cd "$(find ~/Documents/gitpersonal -maxdepth 1 -type d | grep -
 . "$HOME/.asdf/asdf.sh"
 fpath=(${ASDF_DIR}/completions $fpath)
 
+
+# Add java home
+. ~/.asdf/plugins/java/set-java-home.zsh
+
 # start default version of codes
 asdf global java adoptopenjdk-11.0.16+8
 asdf global nodejs 14.21.3
