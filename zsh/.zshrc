@@ -24,18 +24,21 @@ alias gp='cd "$(find ~/Documents/gitpersonal -maxdepth 1 -type d | grep -v "^$" 
 alias gpo='nvim +cd "$(find ~/Documents/gitpersonal -maxdepth 1 -type d | grep -v "^$" | fzf-tmux -p --reverse --preview "echo {}")"'
 
 # alias zellij='/snap/bin/zellij'
+. "$HOME/.asdf/asdf.sh"
+fpath=(${ASDF_DIR}/completions $fpath)
+
 
 zinit ice depth=1
 zinit light romkatv/powerlevel10k
 zinit light zsh-users/zsh-syntax-highlighting
 zinit light zsh-users/zsh-completions
-#zinit light zsh-users/zsh-autosuggestions
+zinit light zsh-users/zsh-autosuggestions
 zinit light Aloxaf/fzf-tab
+zinit light zdharma/history-search-multi-word
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 autoload -U compinit && compinit
 
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
-
 
 # History
 HISTSIZE=10000
@@ -49,7 +52,7 @@ setopt hist_ignore_all_dups
 setopt hist_save_no_dups
 setopt hist_ignore_dups
 setopt hist_find_no_dups
-
+setopt HIST_EXPIRE_DUPS_FIRST
 
 bindkey '^f' autosuggest-accept
 bindkey '^p' hist-search-backward
@@ -60,4 +63,25 @@ zstyle ':completion:*' menu no
 zstyle ':completion:*' list-colors "${(s.:.)LS_COLORS}"
 zstyle ':fzf-tab:complete:cd:*' fzf-preview 'ls --color $realpath'
 zstyle ':fzf:tab:complete:__zoxide_z:*' fzf-preview 'ls --color $realpath'
+
+# Group matches and describe.
+zstyle ':completion:*:*:*:*:*' menu select
+zstyle ':completion:*:matches' group 'yes'
+zstyle ':completion:*:options' description 'yes'
+zstyle ':completion:*:options' auto-description '%d'
+zstyle ':completion:*:corrections' format ' %F{green}-- %d (errors: %e) --%f'
+zstyle ':completion:*:descriptions' format ' %F{yellow}-- %d --%f'
+zstyle ':completion:*:messages' format ' %F{purple} -- %d --%f'
+zstyle ':completion:*:warnings' format ' %F{red}-- no matches found --%f'
+zstyle ':completion:*' format ' %F{yellow}-- %d --%f'
+zstyle ':completion:*' group-name ''
+zstyle ':completion:*' verbose yes
+
+zstyle ':completion:*' fzf-search-display true
+
+# Directories
+zstyle ':completion:*:*:cd:*' tag-order local-directories directory-stack path-directories
+zstyle ':completion:*:*:cd:*:directory-stack' menu yes select
+zstyle ':completion:*:-tilde-:*' group-order 'named-directories' 'path-directories' 'users' 'expand'
+zstyle ':completion:*' squeeze-slashes true
 
