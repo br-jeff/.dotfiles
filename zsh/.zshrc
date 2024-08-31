@@ -27,6 +27,10 @@ alias gpo='nvim +cd "$(find ~/Documents/gitpersonal -maxdepth 1 -type d | grep -
 . "$HOME/.asdf/asdf.sh"
 fpath=(${ASDF_DIR}/completions $fpath)
 
+# start default version of codes
+asdf global java adoptopenjdk-11.0.16+8
+asdf global nodejs 14.21.3
+asdf global golang 1.15.8
 
 zinit ice depth=1
 zinit light romkatv/powerlevel10k
