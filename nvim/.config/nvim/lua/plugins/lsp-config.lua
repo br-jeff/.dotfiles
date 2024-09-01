@@ -1,11 +1,14 @@
 return {
   {
+    require("java").setup(),
+  },
+  {
     "williamboman/mason.nvim",
     config = function()
       require("mason").setup({
         -- Configurações adicionais para Mason
       })
-    end
+    end,
   },
   {
     "williamboman/mason-lspconfig.nvim",
@@ -23,7 +26,7 @@ return {
         },
         automatic_installation = true,
       })
-    end
+    end,
   },
   {
     "neovim/nvim-lspconfig",
@@ -45,13 +48,13 @@ return {
       -- Configuração para tsserver (TypeScript/JavaScript)
       lspconfig.tsserver.setup({
         on_attach = function(client, bufnr)
-          local bufopts = { noremap=true, silent=true, buffer=bufnr }
-          vim.keymap.set('n', 'K', vim.lsp.buf.hover, bufopts)
-          vim.keymap.set('n', '<leader>gd', vim.lsp.buf.definition, bufopts)
-          vim.keymap.set('n', '<leader>gr', vim.lsp.buf.references, bufopts)
-          vim.keymap.set('n', '<leader>ca', vim.lsp.buf.code_action, bufopts)
-          vim.keymap.set('n', '<space>rn', vim.lsp.buf.rename, bufopts)
-          vim.keymap.set('n', '<space>rf', vim.diagnostic.open_float, bufopts)
+          local bufopts = { noremap = true, silent = true, buffer = bufnr }
+          vim.keymap.set("n", "K", vim.lsp.buf.hover, bufopts)
+          vim.keymap.set("n", "<leader>gd", vim.lsp.buf.definition, bufopts)
+          vim.keymap.set("n", "<leader>gr", vim.lsp.buf.references, bufopts)
+          vim.keymap.set("n", "<leader>ca", vim.lsp.buf.code_action, bufopts)
+          vim.keymap.set("n", "<space>rn", vim.lsp.buf.rename, bufopts)
+          vim.keymap.set("n", "<space>rf", vim.diagnostic.open_float, bufopts)
         end,
         capabilities = capabilities,
         settings = { documentFormatting = true },
@@ -59,13 +62,13 @@ return {
 
       lspconfig.gopls.setup({
         on_attach = function(client, bufnr)
-          local bufopts = { noremap=true, silent=true, buffer=bufnr }
-          vim.keymap.set('n', 'K', vim.lsp.buf.hover, bufopts)
-          vim.keymap.set('n', '<leader>gd', vim.lsp.buf.definition, bufopts)
-          vim.keymap.set('n', '<leader>gr', vim.lsp.buf.references, bufopts)
-          vim.keymap.set('n', '<leader>ca', vim.lsp.buf.code_action, bufopts)
-          vim.keymap.set('n', '<space>rn', vim.lsp.buf.rename, bufopts)
-          vim.keymap.set('n', '<space>rf', vim.diagnostic.open_float, bufopts)
+          local bufopts = { noremap = true, silent = true, buffer = bufnr }
+          vim.keymap.set("n", "K", vim.lsp.buf.hover, bufopts)
+          vim.keymap.set("n", "<leader>gd", vim.lsp.buf.definition, bufopts)
+          vim.keymap.set("n", "<leader>gr", vim.lsp.buf.references, bufopts)
+          vim.keymap.set("n", "<leader>ca", vim.lsp.buf.code_action, bufopts)
+          vim.keymap.set("n", "<space>rn", vim.lsp.buf.rename, bufopts)
+          vim.keymap.set("n", "<space>rf", vim.diagnostic.open_float, bufopts)
         end,
         capabilities = capabilities,
         settings = {
@@ -77,6 +80,7 @@ return {
           },
         },
       })
+      lspconfig.jdtls.setup({})
 
       -- Adicione outras configurações de servidores de linguagem aqui
     end,

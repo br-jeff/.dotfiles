@@ -12,14 +12,6 @@ return {
   -- add gruvbox
   { "ellisonleao/gruvbox.nvim" },
 
-  -- Configure LazyVim to load gruvbox
-  {
-    "LazyVim/LazyVim",
-    opts = {
-      colorscheme = "gruvbox",
-    },
-  },
-
   -- change trouble config
   {
     "folke/trouble.nvim",
@@ -62,7 +54,7 @@ return {
       },
     },
   },
-
+  
   -- add pyright to lspconfig
   {
     "neovim/nvim-lspconfig",
@@ -134,6 +126,7 @@ return {
         "typescript",
         "vim",
         "yaml",
+        "java"
       },
     },
   },
