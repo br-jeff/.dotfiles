@@ -32,9 +32,13 @@ fpath=(${ASDF_DIR}/completions $fpath)
 . ~/.asdf/plugins/java/set-java-home.zsh
 
 # start default version of codes
-asdf global java adoptopenjdk-11.0.16+8
 asdf global nodejs 14.21.3
-asdf global golang 1.15.8
+asdf global java adoptopenjdk-17.0.0+35
+asdf global golang 1.20.2
+
+export GOROOT=~/.asdf/installs/golang/1.20.2/go
+
+export GO111MODULE=on
 
 zinit ice depth=1
 zinit light romkatv/powerlevel10k
