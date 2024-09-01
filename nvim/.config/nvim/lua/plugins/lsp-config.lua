@@ -1,13 +1,29 @@
 return {
   {
-    require("java").setup(),
+    "nvim-java/nvim-java",
+    dependencies = {
+      "nvim-java/lua-async-await",
+      "nvim-java/nvim-java-core",
+      "nvim-java/nvim-java-test",
+      "nvim-java/nvim-java-dap",
+      "MunifTanjim/nui.nvim",
+      "neovim/nvim-lspconfig",
+      "mfussenegger/nvim-dap",
+      {
+        "williamboman/mason.nvim",
+        opts = {
+          registries = {
+            "github:nvim-java/mason-registry",
+            "github:mason-org/mason-registry",
+          },
+        },
+      },
+    },
   },
   {
     "williamboman/mason.nvim",
     config = function()
-      require("mason").setup({
-        -- Configurações adicionais para Mason
-      })
+      require("mason").setup({})
     end,
   },
   {
@@ -20,7 +36,7 @@ return {
           "tsserver",
           "html",
           "cssls",
-          -- "jdtls",
+          "jdtls",
           "prismals",
           "gopls",
         },
@@ -35,17 +51,14 @@ return {
       local lspconfig = require("lspconfig")
       local capabilities = require("cmp_nvim_lsp").default_capabilities()
 
-      -- Configuração para clangd (C/C++)
       lspconfig.clangd.setup({
         capabilities = capabilities,
       })
 
-      -- Configuração para lua_ls (Lua)
       lspconfig.lua_ls.setup({
         capabilities = capabilities,
       })
 
-      -- Configuração para tsserver (TypeScript/JavaScript)
       lspconfig.tsserver.setup({
         on_attach = function(client, bufnr)
           local bufopts = { noremap = true, silent = true, buffer = bufnr }
@@ -80,9 +93,8 @@ return {
           },
         },
       })
-      lspconfig.jdtls.setup({})
 
-      -- Adicione outras configurações de servidores de linguagem aqui
+      lspconfig.jdtls.setup({})
     end,
   },
 }
