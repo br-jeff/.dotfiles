@@ -1,9 +1,6 @@
 <h2 align="center"> Ubuntu Configurations  </h2>
 
 
-
-
-
 ## Apresentation
 ![System SS](docs/system.png)
 
@@ -42,7 +39,6 @@
   </tr>
 </table>
 
-
 ## Introdution
 This environment is designed for use with GNU Stow. Each folder represents a separate module, and the files within these folders are organized based on their intended locations in the HOME directory. 
 
@@ -51,6 +47,22 @@ stow --adopt $FOLDER_MODULE
 ```
 
 ###### Don't install the Wayland module if you're using i3wm.
+
+# Requerimetns
+
+### ZSH and ASDF
+
+To get nvim working with everything set up, you should have ASDF installed. ASDF is configured with Zinit on ZSH, so you don’t need to install it separately—just link your .zshrc file.
+
+By default, ZSH will start with global versions. This prevents Mason from crashing and eliminates the need to set the global version for every project that doesn't have a .tool-versions file.
+You can see versions on script.sh file
+
+### Neovim
+
+Neovim is configured with LSP for Java, JavaScript, TypeScript, and Go. 
+Install JDTLS with Mason, and everything should work, including auto-imports. If you're working with Java and don’t have LSP features functioning, check if the options in `nvim/ftplugin/java.lua` are correctly set.
+
+When starting Neovim, you should not see any errors. If you do, please update Neovim and check if the global ASDF settings are working by running script.sh 
 
 ## Setup
 I use Moonlander from ZSA with a custom layout featuring layers for tmux, gnome and nvim. To optimize my workflow, I prefer crafting macros rather than relyng solely on configurations.
