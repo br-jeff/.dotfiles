@@ -46,6 +46,13 @@ This environment is designed for use with GNU Stow. Each folder represents a sep
 stow --adopt $FOLDER_MODULE
 ```
 
+You could install GNUStow with comand 
+
+``` sudo apt install stow  ```
+
+for more information see  https://www.gnu.org/software/stow/
+
+
 ###### Don't install the Wayland module if you're using i3wm.
 
 # Requerimetns
@@ -54,8 +61,8 @@ stow --adopt $FOLDER_MODULE
 
 To get nvim working with everything set up, you should have ASDF installed. ASDF is configured with Zinit on ZSH, so you don’t need to install it separately—just link your .zshrc file.
 
-By default, ZSH will start with global versions. This prevents Mason from crashing and eliminates the need to set the global version for every project that doesn't have a .tool-versions file.
-You can see versions on script.sh file
+By default, ZSH will start with ASDF global versions. This prevents Mason from crashing and eliminates the need to set the global version for every project that doesn't have a .tool-versions file.
+You can see versions on script.sh file.
 
 ### Neovim
 
