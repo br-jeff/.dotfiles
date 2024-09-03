@@ -1,4 +1,4 @@
-local home = os.getenv("HOME")
+--[[ local home = os.getenv("HOME")
 local project_name = vim.fn.fnamemodify(vim.fn.getcwd(), ":p:h:t")
 local workspace_dir = vim.fn.expand("~/Documents/javaprojects/") .. project_name
 local java_path = vim.fn.systemlist("asdf which java")[1]
@@ -64,3 +64,4 @@ local config = {
 }
 
 require("jdtls").start_or_attach(config)
+ ]]
