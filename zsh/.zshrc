@@ -22,6 +22,7 @@ alias pjo='nvim +cd "$(find ~/Documents/projects -maxdepth 1 -type d | grep -v "
 
 alias gp='cd "$(find ~/Documents/gitpersonal -maxdepth 1 -type d | grep -v "^$" | fzf-tmux -p --reverse --preview "echo {}")"'
 alias gpo='nvim +cd "$(find ~/Documents/gitpersonal -maxdepth 1 -type d | grep -v "^$" | fzf-tmux -p --reverse --preview "echo {}")"'
+alias dotfiles='cd ~/.dotfiles'
 
 # alias zellij='/snap/bin/zellij'
 . "$HOME/.asdf/asdf.sh"
@@ -35,6 +36,8 @@ fpath=(${ASDF_DIR}/completions $fpath)
 asdf global nodejs 14.21.3
 asdf global java adoptopenjdk-17.0.0+35
 asdf global golang 1.20.2
+asdf global maven 3.5.4
+
 
 export GOROOT=~/.asdf/installs/golang/1.20.2/go
 
