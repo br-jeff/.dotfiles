@@ -54,7 +54,7 @@ return {
       },
     },
   },
-  
+
   -- add pyright to lspconfig
   {
     "neovim/nvim-lspconfig",
@@ -126,7 +126,7 @@ return {
         "typescript",
         "vim",
         "yaml",
-        "java"
+        "java",
       },
     },
   },
@@ -145,7 +145,7 @@ return {
         "java",
         "go",
         "gomod",
-        "json"
+        "json",
       })
     end,
   },
