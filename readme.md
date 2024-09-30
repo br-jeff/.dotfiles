@@ -62,17 +62,18 @@ for more information see  https://www.gnu.org/software/stow/
 
 ### Instalation
 
-First, you will need to install apt-packages.sh to have essential packages. You will also need to install all the fonts in the Ubuntu folder.
+First, you will need to install `apt-packages.sh` to get essential packages. You will also need to install all the fonts in the Ubuntu folder.
 
-Now You have two options, using UBUNTU gnome interface or I3WM
+Now, you have two options: using the Ubuntu GNOME interface or i3wm.
 
-#### I3WM
-for I3WM widownn manager you need to run i3wm.sh, and use stow on modules, rofi, dunst and i3wm
+#### i3wm
 
+For the i3wm window manager, you need to run `i3wm.sh` and use Stow for the modules: `rofi`, `dunst`, and `i3wm`.
 
 #### Ubuntu
 
-For Ubuntu option you need to run ubuntu-wm.sh for remove all default gnome shotcuts, you also need to install Forge gnome extension to have make windown manager.
+For the Ubuntu option, you need to run `ubuntu-wm.sh` to remove all default GNOME shortcuts. You will also need to install the Forge GNOME extension to configure the window manager.
+
 
 
 ### ZSH and ASDF
