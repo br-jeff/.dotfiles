@@ -39,6 +39,9 @@
   </tr>
 </table>
 
+## Instalation with script
+If you want to run script.sh, you should have the .dotfiles repository in your home folder. You also need to install the fonts in the Ubuntu folder.
+
 ## Introdution
 This environment is designed for use with GNU Stow. Each folder represents a separate module, and the files within these folders are organized based on their intended locations in the HOME directory. 
 
@@ -56,6 +59,21 @@ for more information see  https://www.gnu.org/software/stow/
 ###### Don't install the Wayland module if you're using i3wm.
 
 # Requerimetns
+
+### Instalation
+
+First, you will need to install apt-packages.sh to have essential packages. You will also need to install all the fonts in the Ubuntu folder.
+
+Now You have two options, using UBUNTU gnome interface or I3WM
+
+#### I3WM
+for I3WM widownn manager you need to run i3wm.sh, and use stow on modules, rofi, dunst and i3wm
+
+
+#### Ubuntu
+
+For Ubuntu option you need to run ubuntu-wm.sh for remove all default gnome shotcuts, you also need to install Forge gnome extension to have make windown manager.
+
 
 ### ZSH and ASDF
 
@@ -79,7 +97,7 @@ You can use my layout with the link below:
 https://configure.zsa.io/moonlander/layouts/YVjWy/LLpoX/0
 ```
 
-## I3WM
+## I3WM Or Ubuntu WM
 
 <table align="center">
   <tr>
