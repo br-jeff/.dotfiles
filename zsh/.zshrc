@@ -17,12 +17,28 @@ source "$HOME/.local/share/zinit/zinit.git/zinit.zsh"
 autoload -Uz _zinit
 (( ${+_comps} )) && _comps[zinit]=_zinit
 
-alias pj='cd "$(find ~/Documents/projects -maxdepth 1 -type d | grep -v "^$" | fzf-tmux -p --reverse --preview "echo {}")"'
+alias pj='cd "$(find ~/Documents/projects --preview -maxdepth 1 -type d | grep -v "^$" | fzf-tmux -p --reverse --preview "echo {}")"'
 alias pjo='nvim +cd "$(find ~/Documents/projects -maxdepth 1 -type d | grep -v "^$" | fzf-tmux -p --reverse --preview "echo {}")"'
 
 alias gp='cd "$(find ~/Documents/gitpersonal -maxdepth 1 -type d | grep -v "^$" | fzf-tmux -p --reverse --preview "echo {}")"'
 alias gpo='nvim +cd "$(find ~/Documents/gitpersonal -maxdepth 1 -type d | grep -v "^$" | fzf-tmux -p --reverse --preview "echo {}")"'
 alias dotfiles='cd ~/.dotfiles'
+
+alias ls='eza -lh --group-directories-first --icons'
+alias lsa='ls -a'
+
+# Git
+alias gcm='git commit -m'
+alias gcam='git commit -a -m'
+alias gcad='git commit -a --amend'
+
+alias ff="fzf --preview 'batcat --style=numbers"
+alias lta='lt -a'
+
+alias bat='batcat'
+alias lzg='lazygit'
+alias lzd='lazydocker'
+alias lt='eza --tree --level=2 --long --icons --git'
 
 # alias zellij='/snap/bin/zellij'
 . "$HOME/.asdf/asdf.sh"

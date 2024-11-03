@@ -39,17 +39,21 @@
   </tr>
 </table>
 
-## Instalation with script
-If you want to run script.sh, you should have the .dotfiles repository in your home folder. You also need to install the fonts in the Ubuntu folder.
+## Instalation
+
+You should start with one of these two options, the `ubuntu` folder, where you can follow the README.md, or the `i3wm` folder.
+
+
+
 
 ## Introdution
-This environment is designed for use with GNU Stow. Each folder represents a separate module, and the files within these folders are organized based on their intended locations in the HOME directory. 
+This environment is designed for use with GNU Stow. Each folder represents a separate module, and the files within these folders are organized based on their intended locations in the HOME directory.
 
 ```
 stow --adopt $FOLDER_MODULE
 ```
 
-You could install GNUStow with comand 
+You could install GNUStow with comand
 
 ``` sudo apt install stow  ```
 
@@ -85,10 +89,10 @@ You can see versions on script.sh file.
 
 ### Neovim
 
-Neovim is configured with LSP for Java, JavaScript, TypeScript, and Go. 
+Neovim is configured with LSP for Java, JavaScript, TypeScript, and Go.
 Install JDTLS with Mason, and everything should work, including auto-imports. If you're working with Java and don’t have LSP features functioning, check if the options in `nvim/ftplugin/java.lua` are correctly set.
 
-When starting Neovim, you should not see any errors. If you do, please update Neovim and check if the global ASDF settings are working by running script.sh 
+When starting Neovim, you should not see any errors. If you do, please update Neovim and check if the global ASDF settings are working by running script.sh
 
 ## Setup
 I use Moonlander from ZSA with a custom layout featuring layers for tmux, gnome and nvim. To optimize my workflow, I prefer crafting macros rather than relyng solely on configurations.
@@ -124,11 +128,11 @@ https://configure.zsa.io/moonlander/layouts/YVjWy/LLpoX/0
    <tr>
     <td>SUPER + H</td>
     <td>Focus right windown</td>
-  </tr> 
+  </tr>
   <tr>
     <td>SUPER + J</td>
     <td>Focus down windown</td>
-  </tr> 
+  </tr>
   <tr>
     <td>SUPER + K</td>
     <td>Focus up windown</td>
@@ -136,95 +140,95 @@ https://configure.zsa.io/moonlander/layouts/YVjWy/LLpoX/0
    <tr>
     <td>SUPER + L</td>
     <td>Focus right windown</td>
-  </tr> 
+  </tr>
    <tr>
    <td>SUPER + F</td>
     <td>Active Windown fullscreen</td>
-  </tr> 
+  </tr>
    <tr>
    <td>SUPER + Y</td>
     <td>Change tile direction</td>
-  </tr> 
+  </tr>
   <tr>
    <td>SUPER + M</td>
     <td>Exit system</td>
-  </tr> 
+  </tr>
   <tr>
    <td>SUPER + 1 </td>
     <td>Change to workspace 1</td>
-  </tr> 
+  </tr>
    <tr>
    <td>SUPER + 2 </td>
     <td>Change to workspace 2</td>
-  </tr> 
+  </tr>
    <tr>
    <td>SUPER + 3 </td>
     <td>Change to workspace 3</td>
-  </tr> 
+  </tr>
    <tr>
    <td>SUPER + 4 </td>
     <td>Change to workspace 4</td>
-  </tr> 
+  </tr>
    <tr>
    <td>SUPER + 5 </td>
     <td>Change to workspace 5</td>
-  </tr> 
+  </tr>
    <tr>
    <td>SUPER + 6 </td>
     <td>Change to workspace 6</td>
-  </tr> 
+  </tr>
    <tr>
    <td>SUPER + 7 </td>
     <td>Change to workspace 8</td>
-  </tr> 
+  </tr>
    <tr>
    <td>SUPER + 9 </td>
     <td>Change to workspace 9</td>
-  </tr> 
+  </tr>
    <tr>
    <td>SUPER + 0 </td>
     <td>Change to workspace 10</td>
-  </tr> 
+  </tr>
    <tr>
    <td>SUPER + SHIFT + 1 </td>
     <td>Move focus windown to workspace 1</td>
-  </tr> 
+  </tr>
     <tr>
    <td>SUPER + SHIFT + 2 </td>
     <td>Move focus windown to workspace 2</td>
-  </tr> 
+  </tr>
     <tr>
    <td>SUPER + SHIFT + 3 </td>
     <td>Move focus windown to workspace 3</td>
-  </tr> 
+  </tr>
     <tr>
    <td>SUPER + SHIFT + 4 </td>
     <td>Move focus windown to workspace 4</td>
-  </tr> 
+  </tr>
     <tr>
    <td>SUPER + SHIFT + 5 </td>
     <td>Move focus windown to workspace 5</td>
-  </tr> 
+  </tr>
     <tr>
    <td>SUPER + SHIFT + 6 </td>
     <td>Move focus windown to workspace 6</td>
-  </tr> 
+  </tr>
     <tr>
    <td>SUPER + SHIFT + 7 </td>
     <td>Move focus windown to workspace 7</td>
-  </tr> 
+  </tr>
     <tr>
    <td>SUPER + SHIFT + 8 </td>
     <td>Move focus windown to workspace 8</td>
-  </tr> 
+  </tr>
     <tr>
    <td>SUPER + SHIFT + 9 </td>
     <td>Move focus windown to workspace 9</td>
-  </tr> 
+  </tr>
     <tr>
    <td>SUPER + SHIFT + 0 </td>
     <td>Move focus windown to workspace 0</td>
-  </tr> 
+  </tr>
 </table>
 
 
