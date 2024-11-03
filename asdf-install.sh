@@ -1,4 +1,6 @@
 # Below are default versions on .zshrc
+git clone https://github.com/asdf-vm/asdf.git ~/.asdf --branch v0.14.1
+
 asdf plugin add nodejs https://github.com/asdf-vm/asdf-nodejs.git
 asdf plugin-add java https://github.com/halcyon/asdf-java.git
 asdf plugin add golang https://github.com/asdf-community/asdf-golang.git
