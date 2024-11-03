@@ -156,3 +156,10 @@ gsettings set org.gnome.desktop.wm.keybindings close "['<Super>q']"
 
 
 gsettings set org.gnome.desktop.wm.keybindings toggle-fullscreen "['<Super>f']"
+
+
+# Alacritty Super + T
+gsettings set org.gnome.settings-daemon.plugins.media-keys custom-keybindings "['/org/gnome/settings-daemon/plugins/media-keys/custom-keybinding/super-t/']"
+gsettings set org.gnome.settings-daemon.plugins.media-keys.custom-keybinding:/org/gnome/settings-daemon/plugins/media-keys/custom-keybinding/super-t/ name 'Launch Alacritty'
+gsettings set org.gnome.settings-daemon.plugins.media-keys.custom-keybinding:/org/gnome/settings-daemon/plugins/media-keys/custom-keybinding/super-t/ command 'alacritty'
+gsettings set org.gnome.settings-daemon.plugins.media-keys.custom-keybinding:/org/gnome/settings-daemon/plugins/media-keys/custom-keybinding/super-t/ binding '<Super>t'
