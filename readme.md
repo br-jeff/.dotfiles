@@ -1,4 +1,4 @@
-<h2 align="center"> Ubuntu Configurations  </h2>
+<h2 align="center"> Ubuntu HYPERLAND Configurations  </h2>
 
 
 ## Apresentation
