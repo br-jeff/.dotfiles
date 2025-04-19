@@ -1,0 +1,34 @@
+* {
+  black:                    #585B70;
+  white:                    #cdd6f4;
+
+  blue:                     #0087af;
+  red:                      #FF4365;
+
+  blue-light:               #00aefe;
+  lavender:                 #b4befe;
+
+  purpleB:                  #3F0B99;
+  purple:                   #bd93f9;
+
+  subtext0:                 #a6adc8;
+  subtext1:                 #bac2de;
+
+  surface0:                 #1b1b1b;
+  surface1:                 #45475a;
+  surface2:                 #f38ba8;
+
+  overlay0:                 #11111b;
+  overlay1:                 #7f849c;
+  overlay2:                 #9399b2;
+
+  foreground:               #28283E;
+  background-color:         #1E1E2E;
+  background-color-light:   #28283E;
+
+  border:                   #28283E;
+  selected:                 #28283E;
+  active:                   #00aefe;
+  urgent:                   #FF4365;
+}
+

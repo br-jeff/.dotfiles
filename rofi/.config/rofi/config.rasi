@@ -20,12 +20,5 @@
 /* You can manually change here or you can use rofi theme selector SUPER SHIFT E */
 
 
-//@theme "~/.config/rofi/themes/KooL_style-4.rasi"
-
-//@theme "/home/jefesilva/.local/share/rofi/themes/KooL_style-9.rasi"
-
-//@theme "/home/jefesilva/.config/rofi/themes/KooL_style-14.rasi"
-
-//@theme "/home/jefesilva/.local/share/rofi/themes/KooL_style-4.rasi"
 
 @theme "/home/jefesilva/.config/rofi/themes/KooL_style-9.rasi"

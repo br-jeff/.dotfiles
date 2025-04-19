@@ -18,20 +18,20 @@ configuration {
 }
 
 /* ---- Load wallust colors ---- */
-@theme "~/.config/rofi/wallust/colors-rofi.rasi"
+@theme "~/.config/hypr/global-colors/colors.rofi"
 
 /*****----- Global Properties -----*****/
 * {    
-    BG:    @background;
-    BGA:   @color11;
-    FG:    @text1;
-    FGA:   #F28FADff;
-    BDR:   @color12;
-    SEL:   @color1;
-    UGT:   #F28FADff;
-    IMG:   #FAE3B0ff;
-    OFF:   #575268ff;
-    ON:    #ABE9B3ff;
+    BG:    @background-color;
+    BGA:   @border;
+    FG:    @white;
+    FGA:   @white;
+    BDR:   @border;
+    SEL:   @blue;
+    UGT:   #F00;
+    IMG:   #F00;
+    OFF:   #F00;
+    ON:    #F00;
 }
 
 /* ---- Window ---- */
@@ -59,8 +59,8 @@ textbox-prompt-colon {
     expand: 			            false;
     str: 			                "   ";
     border-radius:                  56%;
-    background-color:               @color12;
-    text-color:                     @text1;
+    background-color:               @BGA;
+    text-color:                     @FGA;
     padding:                        8px 12px 8px 12px;
 }
 
@@ -113,7 +113,7 @@ scrollbar {
   border:							0px;
   border-radius:					10px;
   background-color:					transparent;
-  handle-color: 					@BDR;
+  handle-color: 					@border;
   handle-width: 					2px ;
   padding:      					0;
 }
