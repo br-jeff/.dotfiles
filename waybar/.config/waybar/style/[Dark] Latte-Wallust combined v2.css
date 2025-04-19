@@ -23,16 +23,17 @@
 * {
     font-family: "JetBrainsMono Nerd Font";
     font-weight: bold;
-	min-height: 0;  
+	min-height: 0; 
+    padding: 1px; 
     /* set font-size to 100% if font scaling is set to 1.00 using nwg-look */
     font-size: 97%;
     font-feature-settings: '"zero", "ss01", "ss02", "ss03", "ss04", "ss05", "cv31"';
 }
 
 window#waybar {
-    background: rgba(0,0,0,0);
-    border-radius:30px;
-	padding-top: 4px;
+    background: @background-color;
+    border-radius: 30px;
+	padding: 15px;
 }
 
 tooltip {
@@ -47,7 +48,7 @@ tooltip {
 #workspaces {
     padding: 0px 1px;
     border-radius: 15px;
-    background-color: @foreground; /* Workspace colors */
+    background-color: @background-color; /* Workspace colors */
   /*   border-bottom: 2px solid @border; */
     font-weight: bold;
     font-style: normal;
@@ -99,9 +100,10 @@ tooltip {
 
 /*-----module groups----*/
 .modules-center {
-    background-color: @background-color;
-    border-radius: 30px;
-    padding: 3px;
+    background-color: @foreground;
+     border-radius: 30px;
+    margin-top: 2px;
+    /* padding: 3px; */
 	/* border: 1px solid @foreground; */
 }
 
@@ -119,8 +121,6 @@ tooltip {
 #mpris,
 #network,
 #power-profiles-daemon,
-#pulseaudio,
-#pulseaudio-slider,
 #taskbar,
 #temperature,
 #tray,
@@ -141,12 +141,9 @@ tooltip {
 #custom-hypridle,
 #custom-menu,
 #custom-playerctl,
-#custom-power_vertical,
-#custom-power,
 #custom-quit,
 #custom-reboot,
 #custom-settings,
-#custom-spotify,
 #custom-swaync,
 #custom-tty,
 #custom-updater,
@@ -164,6 +161,15 @@ tooltip {
     color: @white;
 	padding-right: 6px;
 	padding-left: 6px;;
+}
+
+
+#custom-power_vertical,
+#custom-power,
+#pulseaudio,
+#custom-spotify,
+#pulseaudio-slider {
+    color: @white
 }
 
 #temperature.critical {
