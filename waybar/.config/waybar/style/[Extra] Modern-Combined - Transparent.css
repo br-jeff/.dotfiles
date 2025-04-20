@@ -172,7 +172,7 @@ tooltip {
 #custom-weather.showyIcyDay,
 #custom-weather.snowyIcyNight,
 #custom-weather.sunnyDay {
-    color: @foreground;
+    color: @f;
     background-color: @foreground;
 	padding-right: 6px;
 	padding-left: 6px;
