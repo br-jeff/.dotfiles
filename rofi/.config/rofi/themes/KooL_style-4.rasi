@@ -75,7 +75,7 @@ window {
     border-color:                @border-color;
     cursor:                      "default";
     /* Backgroud Colors */
-    background-color:            @background-color;
+    background-color:            @background;
 }
 
 /*****----- Main Box -----*****/
@@ -94,7 +94,7 @@ mainbox {
 /*****----- A Custom Box -----*****/
 custombox {
     spacing:                     0px;
-    background-color:            @background-color;
+    background-color:            @background;
     text-color:                  @foreground-color;
     orientation:                 horizontal;
     children:                    [ "mode-switcher", "listview" ];
@@ -319,6 +319,6 @@ error-message {
     border:                      2px solid;
     border-radius:               8px;
     border-color:                @border-color;
-    background-color:            @background-color;
+    background-color:            @background;
     text-color:                  @foreground-color;
 }

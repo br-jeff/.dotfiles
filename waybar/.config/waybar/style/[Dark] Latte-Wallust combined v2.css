@@ -31,7 +31,7 @@
 }
 
 window#waybar {
-    background: @background-color;
+    background: @background;
     border-radius: 30px;
 	padding: 15px;
 }
@@ -41,14 +41,14 @@ tooltip {
     border-radius: 12px;
     border-width: 1px;
     border-style: solid;
-    border-color: @border;
+    border-color: @background;
     color: #F00;
 }
 
 #workspaces {
     padding: 0px 1px;
     border-radius: 15px;
-    background-color: @background-color; /* Workspace colors */
+    background-color: @background; /* Workspace colors */
   /*   border-bottom: 2px solid @border; */
     font-weight: bold;
     font-style: normal;
